@@ -1,0 +1,144 @@
+/* 列表页专有样式 */
+.miaoSha {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    width: 73px;
+    height: 33px;
+    padding: 3px 0 0 13px;
+    border-left: 2px solid #c81523;
+}
+
+/* nav部分 */
+.miaoSha_list ul li {
+    float: left;
+}
+.miaoSha_list ul li a {
+    display: block;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 47px;
+    color: #000;
+}
+.miaoSha_con {
+    float: right;
+}
+.miaoSha_con ul li {
+    float: left;
+}
+.miaoSha_con ul li:last-child a::after {
+    content: '\e900';
+    font-family: icomoon;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+.miaoSha_con ul li a {
+    display: block;   
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 49px;
+}
+
+/* 秒杀产品栏目背景 */
+.miaoSha_hd {
+    position: relative;
+    margin-bottom: 10px;
+}
+.miaoSha_hd ul li {
+    width: 290px;
+    height: 460px;
+}
+.miaoSha_hd::before {
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: 563px;
+    width: 27px;
+    height: 26px;
+    background: url(../images/icons.png) no-repeat -15px -16px;
+}
+.miaoSha_bd ul {
+    overflow: hidden;
+}
+.miaoSha_bd ul li {
+    float: left;
+    margin-right: 12px;
+    width: 290px;
+    height: 483px;
+    border: 1px solid transparent;
+}
+.miaoSha_bd ul li:hover {
+    border: 1px solid #e12228;
+}
+.miaoSha_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.miaoSha_bd ul li img {
+    width: 100%;
+}
+.miaoSha_phone p {
+    width: 100%;
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 22px;
+}
+.miaoSha_phone .price {
+    padding: 0 12px;
+    margin-top: 18px;
+    font-weight: 700;
+}
+.miaoSha_phone .price .now {
+    font-size: 22px;
+    color: #e60012;
+}
+.miaoSha_phone .price .past {
+    font-size: 14px;
+    color:#a4a4a4;
+    text-decoration: line-through;
+}
+.miaoSha_phone .jinDu {
+    position: relative;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 14px;
+    margin: 13px 0;
+}
+.miaoSha_phone .jinDu .bar {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -66px;
+    border: 1px solid #ed282e;
+    border-radius: 6px;
+    width: 132px;
+    height: 12px;
+}
+.miaoSha_phone .jinDu .bar .red {
+    width: 87%;
+    height: 100%;
+    background-color: #ed282e;
+}
+.miaoSha_phone .jinDu .fr::before {
+    content: '剩余';
+    color: #808080;
+}
+.miaoSha_phone .jinDu .fr::after {
+    content: '件';
+    color: #808080;
+}
+.miaoSha_phone .buy a {
+    display: block;
+    height: 50px;
+    background-color: #b1191a;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* 底部 */
+.footer {
+    margin-top: 276px;
+}

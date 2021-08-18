@@ -1,0 +1,247 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.focus {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 100%;
+    background-color: purple;
+}
+.pre,
+.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'icomoon';
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.pre {
+    left: 0;
+}
+.pre::before {
+    content: '\e901';
+    border-radius: 0 10px 10px 0;
+}
+.next {
+    right: 0;
+}
+.next::before {
+    content: '\e902';
+    border-radius: 10px 0 0 10px;
+}
+.pre:hover,
+.next:hover {
+    color: #fff;
+}
+.ad-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.ad-nav ul li {
+    float: left;
+    margin: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.ad-nav ul li:nth-child(1) {
+    background-color: #ff5000;
+}
+
+.newsFlash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+.news {
+    width: 250px;
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news .news-hd {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news-hd .more {
+    float: right;
+}
+.news-hd .more::after {
+    content: '\e902';
+    padding-left: 3px;
+    font-family: icomoon;
+}
+.news-bd {
+    padding: 5px 15px 0;
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+}
+.lifeService {
+    overflow: hidden;
+    width: 250px;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+}
+.lifeService ul {
+    width: 252px;
+}
+.lifeService ul li:nth-child(2) {
+    position: relative;
+}
+.lifeService ul li:nth-child(2)::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 11px;
+    height: 15px;
+    background: url(../images/youhui.png);
+}
+.lifeService ul li {
+    float: left;
+    width: 63px;
+    height: 70px;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeService ul li i {
+    display: inline-block;
+    margin: 12px 0 0 0;
+    width: 22px;
+    height: 24px;
+    background-color: pink;
+    background: url(../images/icons.png) no-repeat -16px -16px;
+}
+.bargain {
+    margin-top: 5px;
+    width: 250px;
+    height: 75px;
+}
+
+/* 推荐模块 */
+.recom {
+    margin-top: 12px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+.recom_hd {
+    float: left;
+    width: 206px;
+    height: 100%;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #5c5251;
+}
+.recom_bd {
+    float: left;
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+    width: 248px;
+    height: 163px;
+}
+.recom_bd ul li:nth-child(-n + 3):after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 2px;
+    height: 145px;
+    background-color: #dddddd;
+}
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+/* 家用电器模块 */
+.floor .w {
+    margin-top: 30px;
+}
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.box_hd h4 {
+    float: left;
+    color: #d04c53;
+    font-size: 18px;
+}
+
+.box_bd {
+    height: 361px;
+}
+.tab_list {
+    float: right;
+}
+.tab_list ul li {
+    line-height: 30px;
+    float: left;
+}
+.tab_list ul li a {
+    font-size: 12px;
+    padding: 0 13px;
+}
+.tab_list_item > div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+.col_210 ul {
+    padding-left: 12px;
+}
+.col_329 {
+    width: 329px;
+}
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+.col_219 {
+    width: 219px;
+}
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
